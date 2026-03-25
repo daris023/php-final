@@ -1,0 +1,159 @@
+/* Variablat e ngjyrave për një pamje konsistente */
+:root {
+    --primary-color: #2d5a27; /* Ngjyra e gjelbër nga Miro */
+    --secondary-color: #a8d5ba;
+    --danger-color: #e74c3c;
+    --bg-color: #f0f2f5;
+    --text-color: #2c3e50;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Containeri kryesor */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigimi si Dashboard */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Tabelat */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Butonat */
+.btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-delete {
+    background-color: #ffdce0;
+    color: var(--danger-color);
+    border: 1px solid var(--danger-color);
+}
+
+.btn-delete:hover {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+/* Forma e bukur */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(45, 90, 39, 0.3);
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e3d1a;
+    letter-spacing: 1px;
+}
+
+/* Log-et në TXT me ngjyra */
+.log-item {
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    margin-bottom: 5px;
+    background: #fdfdfd;
+}
+
+.log-add { border-color: #2ecc71; background: #eafff2; }
+.log-delete { border-color: #e74c3c; background: #fff2f0; }
